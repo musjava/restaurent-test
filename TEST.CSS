@@ -407,7 +407,8 @@ flex-direction: column;
             padding: 20px;
            
            
-      }   }
+         }
+        }
 }
 /*mobil*/
 @media(max-width:600px){
