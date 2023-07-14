@@ -55,12 +55,8 @@ a
     margin-right: 20px;
     padding: 1px 10px 1px 10px;
 }
-.btn-secondary{
-    color: #ffffff;
-    background-color: #383848;
-    margin-left: 60px;
-}
-.btn-primary-top:hover,.btn-primary:hover,.btn-secondary:hover{
+
+.btn-primary-top:hover,.btn-primary:hover{
     border: yellow 1px solid;
     color: yellow;
 }
@@ -165,7 +161,8 @@ header *{
 }
 #about .about-content img{
     width: 300px;
-}#about .about-content p{
+}
+#about .about-content p{
     color: rgb(102, 101, 99);
     margin-right: 30px;
     margin-left: 20px;
@@ -174,6 +171,17 @@ header *{
     word-spacing: 5px;
    
 }
+.btn-secondary{
+    color: #ffffff;
+    background-color: #383848;
+    margin-left: 60px;
+}
+.btn-secondary:hover{
+    border: yellow 1px solid;
+    color: yellow;
+   
+}
+
 
 /*about end*/
 /*offers start*/
@@ -197,6 +205,9 @@ header *{
 }
 .offers-items img{
     width: 300px;    
+}
+#fo3to{
+    width: 245px;
 }
 .offers-items h3{
    font-size: 20px;
@@ -227,3 +238,156 @@ header *{
  }
 
 /*offers end*/
+/*tablet*/
+@media(max-width:1000px){
+    #navbar img{
+       
+        margin-left: 40px;
+    }
+    #navbar ul{
+        margin: 2px;
+        align-items: center;
+        margin-top: 10px;
+    }
+    #navbar{
+     justify-content: none;   
+    }
+    #navbar ul li a{
+        margin: 10px 15px;
+    }
+    
+    header .content h1{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    header .content p{
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    .btn{
+        padding: 10px 20px;
+    }
+    .btn-primary-top{
+        padding: 1px 5px 1px 5px;
+        font-size: 10px;
+    }
+    #about{
+        height: auto;
+        padding: 20px;
+    }
+    #about .title{
+        height: 12VH;
+    }
+    #about h2{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    #about .title p{
+        font-size: large;
+    }
+    #about .about-content img{
+        width: 150px;
+        height: 150px;
+    }
+    #about .about-content p{
+        margin-right: 15px;
+        line-height: 1;
+    }
+    .offers-items img{
+        width: 200px;    
+    }#fo3to{
+        width: 145px;
+    }
+    offers-items h3{
+        font-size: 16px;
+        padding: 15px;
+     }
+    .offers-items p{
+        line-height: 12px;
+        padding: 0 12px;
+        font-size: 12px;
+    }
+}
+/*mobil*/
+@media(max-width:600px){
+    #navbar{
+        flex-direction: column;
+    }
+
+        #navbar{ 
+            padding: 10px;
+        }
+        #navbar img{
+        margin:auto;
+        justify-content: center;
+        padding-bottom: 10px;
+        }
+        #navbar ul{
+            margin: auto;
+            justify-content: center;
+        }
+        #navbar ul li a{
+            margin: 8px 8px;
+        }
+        header .content h1{
+            font-size: 20px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .btn-primary-top{
+                display:none;
+            }
+            header .content p{
+                font-size: 20px;
+                text-align: center;
+                margin: 20px ;
+            }
+            #about .about-content{
+                flex-direction: column;
+            }
+            #about .title p{
+                margin-bottom: 20px;
+            }
+            .btn-secondary{
+                display: inline;
+            }
+            #about .about-content img{
+               display: none;
+            }
+        .offers-items{
+            flex-direction: column;
+        }
+        #about .title{
+            height: auto;
+        }
+        #about{height: auto;}
+        #about .about-content p{
+            margin-bottom: 20px;
+        }
+        .btn-secondary{
+          
+            margin: auto;
+           justify-content: center;
+           margin-bottom: 100px; 
+        }
+        #offers{
+            height: auto;
+        }
+        .offers-items h3{
+            font-size: 15px;
+            
+        }
+    #offers .title h2{
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    #offers span{
+        margin-bottom: 100px;
+    }
+    .offers-items p{
+        font-size: medium;
+        text-align: center;
+        margin: 20px 30px;
+    }
+ 
+}
