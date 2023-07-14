@@ -64,11 +64,8 @@ a
 
 #navbar{
     display: flex;
-    
-    
     justify-content: space-between;
     width: 100%;
-    
     background: rgb(250, 235, 215,0.6) ;
     
 }
@@ -239,7 +236,7 @@ header *{
 
 /*offers end*/
 /*tablet*/
-@media(max-width:1000px){
+@media(max-width:1100px){
     #navbar img{
        
         margin-left: 40px;
@@ -298,7 +295,7 @@ header *{
     }#fo3to{
         width: 145px;
     }
-    offers-items h3{
+    .offers-items h3{
         font-size: 16px;
         padding: 15px;
      }
@@ -307,6 +304,110 @@ header *{
         padding: 0 12px;
         font-size: 12px;
     }
+    /*mobail/redmi 9*/
+    @media  (min-height: 2300px) {
+        #navbar{
+        flex-direction: column;
+        height: 10%;
+        }
+        header .content h1{
+            text-align: center;
+            font-size: 100px;
+        }
+        header .content p{
+            font-size: 50px;
+            text-align: center;
+            padding: 20PX;
+            margin-bottom: 100px;
+        }
+        #navbar img{
+            margin: 20px auto;
+            width: 150PX;
+        }
+        #navbar ul{
+            margin: auto;
+            justify-content: center;
+            
+            
+        }
+        #navbar ul li a{
+            margin: 15px 15px 50px 15px;
+            font-size: 40PX;
+            padding: 22PX;
+
+        }
+        .btn-primary-top{
+            display: none;
+        }
+        .btn-primary{
+            padding: 30px 50px ;
+            font-size: 50px;
+            border: 3px solid;
+        }
+        header .content{
+            height: 70vh;
+        }
+        #about{
+            height: auto;
+            padding: 50px;
+        }
+        #about .title{
+            height: 8vh;
+            
+           
+        }
+        #about h2{
+            font-size: 60px;
+        }
+        #about .title p{
+            font-size: 40px;
+        }
+        #about .about-content p{
+            margin: 20px 60px;
+            line-height: 2;
+        }
+        #about .about-content img{
+            
+            width: 400px;
+            height: 400px;
+        }
+        #offers{
+            height: auto;
+        }
+        #offers .title h2{
+            padding: 30px;
+            font-size: 80px;
+        }
+        #offers .title p{
+            padding: 20px;
+            font-size: 50px;
+        } 
+        .offers-items{
+flex-direction: column;
+        }
+        .offers-items img{
+            width: 400px;    
+        }
+        #fo3to{
+            width: 345px;
+        }
+        .offers-items h3{
+            font-size: 50px;
+            padding: 20px;
+         }
+         .offers-items p{
+            padding: 0 30px;
+            line-height: 25px;
+            margin: 30px 120px;
+            font-size: 25px;
+         
+         }
+         #offers span{
+            font-size: 50px;
+            padding: 20px;
+           
+           
+         }
 }
 /*mobil*/
 @media(max-width:600px){
@@ -389,5 +490,6 @@ header *{
         text-align: center;
         margin: 20px 30px;
     }
+ 
  
 }
